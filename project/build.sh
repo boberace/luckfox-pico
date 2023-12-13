@@ -39,6 +39,8 @@ else
 	export RK_JOBS=$((`getconf _NPROCESSORS_ONLN` - 1 ))
 fi
 
+echo "Using $RK_JOBS cores for the build."
+
 export RK_BUILD_VERSION_TYPE=RELEASE
 
 export SDK_ROOT_DIR=$SDK_ROOT_DIR
